@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+   <meta charset="UTF-8">
+   <title>CALCULADORA</title>
+   <link rel="stylesheet" href="./assets/css/style.css" type="text/css">
+</head>
+
+<body>
+	<header>
+        <h1>Calculadora + Juego de piedra papel o tijera</h1>
+    </header>
+	
+
+    
+	<div class="main">
+		<form action="" name="Calculator">
+
+			<input type="text" class="text maincolor" 
+					name="text1" disabled>
+
+			<input type="text" class="text1 maincolor" 
+					name="text12" value="C" onclick="location.reload()"><br>
+			<input type="button" class="num maincolor" 
+					name="num9" value="9" onclick="displaynum(num9.value)">
+			<input type="button" class="num maincolor" 
+					name="num8" value="8" onclick="displaynum(num8.value)">
+			<input type="button" class="num maincolor" 
+					name="num7" value="7" onclick="displaynum(num7.value)">
+			<input type="button" class="num blue" 
+					name="addbtn" value="+" onclick="displaynum(addbtn.value)"><br>
+
+
+
+
+
+
+			<input type="button" class="num maincolor" 
+					name="num6" value="6" onclick="displaynum(num6.value)">
+			<input type="button" class="num maincolor" 
+					name="num5" value="5" onclick="displaynum(num5.value)">
+			<input type="button" class="num maincolor" 
+					name="num4" value="4" onclick="displaynum(num4.value)">
+			<input type="button" class="num pin" 
+					name="subbtn" value="-" onclick="displaynum(subbtn.value)"><br>
+
+			<input type="button" class="num maincolor" 
+					name="num3" value="3" onclick="displaynum(num3.value)">
+			<input type="button" class="num maincolor" 
+					name="num2" value="2" onclick="displaynum(num2.value)">
+			<input type="button" class="num maincolor" 
+					name="num1" value="1" onclick="displaynum(num1.value)">
+			<input type="button" class="num gre" 
+					name="mulbtn" value="*" onclick="displaynum(mulbtn.value)"><br>
+
+			<input type="button" class="num maincolor" 
+					name="dot" value="." onclick="displaynum(dot.value)">
+			<input type="button" class="num maincolor" 
+					name="num0" value="0" onclick="displaynum(num0.value)">
+			<input type="button" class="num pur" 
+					name="eqlbtn" value="=" onclick="text1.value=eval(text1.value)">
+			<input type="button" class="num ora" 
+					name="divbtn" value="/" onclick="displaynum(divbtn.value)"><br>
+		</form>
+		
+		
+		<!--Aqui se va a visualizar el resultado-->
+		 <div class="resultado" id="resultado">
+			Vamos a jugar...!
+		</div>
+	
+		<div class="opciones">
+			<div class="opcion" id="papel">
+				<img src="./assets/img/papel.svg" alt="">
+			</div>
+	
+			<div class="opcion" id="piedra">
+				<img src="./assets/img/piedra.svg" alt="">
+			</div>
+	
+			<div class="opcion" id="tijera">
+				<img src="./assets/img/tijera.svg" alt="">
+			</div>
+		</div>
+   <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
